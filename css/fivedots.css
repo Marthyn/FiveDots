@@ -1,0 +1,179 @@
+/* Usage
+  <div class="fivedots-wave">
+    <div class="fivedots-dot fivedots-dot1"></div>
+    <div class="fivedots-dot fivedots-dot2"></div>
+    <div class="fivedots-dot fivedots-dot3"></div>
+    <div class="fivedots-dot fivedots-dot4"></div>
+    <div class="fivedots-dot fivedots-dot5"></div>
+  </div>
+*/
+
+.fivedots-wave, .fivedots-wave-scale, .fivedots-bounce, .fivedots-bounce-scale {
+  margin: 0 auto;
+  width: 200px;
+  height: 32px;
+  display:block;
+}
+.fivedots-wave .fivedots-dot {
+  background-color: #ecf0f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left:20px;
+  display: inline-block;
+  -webkit-animation: fivedots-WaveDotMove 2.5s infinite ease-in-out;
+          animation: fivedots-WaveDotMove 2.5s infinite ease-in-out;
+}
+.fivedots-wave .fivedots-dot2 {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.fivedots-wave .fivedots-dot3 {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.fivedots-wave .fivedots-dot4 {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.fivedots-wave .fivedots-dot5 {
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+}
+
+@-webkit-keyframes fivedots-WaveDotMove {
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes fivedots-WaveDotMove {
+  50% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+
+.fivedots-wave-scale .fivedots-dot {
+  background-color: #ecf0f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left:20px;
+  display: inline-block;
+  -webkit-animation: fivedots-WaveDotMoveScale 1.8s infinite ease-in-out;
+          animation: fivedots-WaveDotMoveScale 1.8s infinite ease-in-out;
+}
+.fivedots-wave-scale .fivedots-dot2 {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.fivedots-wave-scale .fivedots-dot3 {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.fivedots-wave-scale .fivedots-dot4 {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.fivedots-wave-scale .fivedots-dot5 {
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+}
+
+@-webkit-keyframes fivedots-WaveDotMoveScale {
+  50% {
+    -webkit-transform: translateY(50px) scale(1.5);
+            transform: translateY(50px) scale(1.5);
+  }
+}
+
+@keyframes fivedots-WaveDotMoveScale {
+  50% {
+    -webkit-transform: translateY(40px) scale(1.5);
+            transform: translateY(40px) scale(1.5);
+  }
+}
+
+.fivedots-bounce .fivedots-dot {
+  background-color: #ecf0f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left:20px;
+  display: inline-block;
+  -webkit-animation: fivedots-BounceDotMove 0.5s infinite ease-in-out;
+          animation: fivedots-BounceDotMove 0.5s infinite ease-in-out;
+}
+.fivedots-bounce .fivedots-dot2 {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.fivedots-bounce .fivedots-dot3 {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.fivedots-bounce .fivedots-dot4 {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.fivedots-bounce .fivedots-dot5 {
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+}
+
+@-webkit-keyframes fivedots-BounceDotMove {
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes fivedots-BounceDotMove {
+  50% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+
+.fivedots-bounce-scale .fivedots-dot {
+  background-color: #ecf0f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left:20px;
+  display: inline-block;
+  -webkit-animation: fivedots-WaveDotMoveScale 0.5s infinite ease-in-out;
+          animation: fivedots-WaveDotMoveScale 0.5s infinite ease-in-out;
+}
+.fivedots-bounce-scale .fivedots-dot2 {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.fivedots-bounce-scale .fivedots-dot3 {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.fivedots-bounce-scale .fivedots-dot4 {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.fivedots-bounce-scale .fivedots-dot5 {
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+}
+
+@-webkit-keyframes fivedots-BounceDotMoveScale {
+  50% {
+    -webkit-transform: translateY(50px) scale(1.5);
+            transform: translateY(50px) scale(1.5);
+  }
+}
+
+@keyframes fivedots-BounceDotMoveScale {
+  50% {
+    -webkit-transform: translateY(40px) scale(1.5);
+            transform: translateY(40px) scale(1.5);
+  }
+}
