@@ -8,7 +8,7 @@
   </div>
 */
 
-.fivedots-wave, .fivedots-wave-scale, .fivedots-bounce, .fivedots-bounce-scale {
+.fivedots-wave, .fivedots-wave-scale, .fivedots-bounce, .fivedots-bounce-scale, .fivedots-bird, .fivedots-bird-scale {
   margin: 0 auto;
   width: 200px;
   height: 32px;
@@ -175,5 +175,111 @@
   50% {
     -webkit-transform: translateY(40px) scale(1.5);
             transform: translateY(40px) scale(1.5);
+  }
+}
+
+
+.fivedots-bird .fivedots-dot {
+  background-color: #ecf0f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left:20px;
+  display: inline-block;
+  -webkit-animation: fivedots-Bird 1.5s infinite ease-in-out;
+          animation: fivedots-Bird 1.5s infinite ease-in-out;
+}
+
+.fivedots-bird .fivedots-dot2 {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+.fivedots-bird .fivedots-dot3 {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+.fivedots-bird .fivedots-dot4 {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+
+
+@-webkit-keyframes fivedots-Bird {
+  50% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+@keyframes fivedots-Bird {
+  50% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+.fivedots-bird-scale .fivedots-dot {
+  background-color: #ecf0f1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left:20px;
+  display: inline-block;
+}
+.fivedots-bird-scale .fivedots-dot1 {
+  -webkit-animation: fivedots-BirdScaleTwo 1.5s infinite ease-in-out;
+          animation: fivedots-BirdScaleTwo 1.5s infinite ease-in-out;
+}
+
+.fivedots-bird-scale .fivedots-dot2 {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  -webkit-animation: fivedots-BirdScale 1.5s infinite ease-in-out;
+          animation: fivedots-BirdScale 1.5s infinite ease-in-out;
+}
+.fivedots-bird-scale .fivedots-dot3 {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: fivedots-Bird 1.5s infinite ease-in-out;
+          animation: fivedots-Bird 1.5s infinite ease-in-out;
+}
+.fivedots-bird-scale .fivedots-dot4 {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  -webkit-animation: fivedots-BirdScale 1.5s infinite ease-in-out;
+          animation: fivedots-BirdScale 1.5s infinite ease-in-out;
+}
+
+.fivedots-bird-scale .fivedots-dot5 {
+  -webkit-animation: fivedots-BirdScaleTwo 1.5s infinite ease-in-out;
+          animation: fivedots-BirdScaleTwo 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes fivedots-BirdScale {
+  50% {
+    -webkit-transform: translateY(100px) scale(1.5);
+            transform: translateY(100px) scale(1.5);
+  }
+}
+
+@keyframes fivedots-BirdScale {
+  50% {
+    -webkit-transform: translateY(100px) scale(1.5);
+            transform: translateY(100px) scale(1.5);
+  }
+}
+
+
+@-webkit-keyframes fivedots-BirdScaleTwo {
+  50% {
+    -webkit-transform: translateY(100px) scale(2);
+            transform: translateY(100px) scale(2);
+  }
+}
+
+@keyframes fivedots-BirdScaleTwo {
+  50% {
+    -webkit-transform: translateY(100px) scale(2);
+            transform: translateY(100px) scale(2);
   }
 }
